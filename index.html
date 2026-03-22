@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Kávový tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <h1>Káva a mléko</h1>
+      <button id="installBtn" class="install hidden">Instalovat</button>
+    </header>
+
+    <section class="card" id="userCard">
+      <h2>Uživatel</h2>
+      <div id="users" class="users"></div>
+      <div class="remember-row">
+        <label><input type="checkbox" id="rememberCheckbox"> Zapamatovat</label>
+        <button id="clearRemember" class="link">Smazat</button>
+      </div>
+    </section>
+
+    <form id="drinkForm" class="card">
+      <h2>Nápoje</h2>
+      <div id="types" class="types"></div>
+      <div class="form-actions">
+        <button type="submit" id="submitBtn" class="primary">Odeslat</button>
+        <button type="button" id="resetBtn" class="secondary">Reset</button>
+      </div>
+    </form>
+
+    <section id="status" class="card small hidden"></section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
